@@ -1,0 +1,1064 @@
+[
+
+//
+// TAB
+//
+
+    // Tab set
+    {
+        "class": "tabset_control",
+        "layer0.texture": "Theme - Sienna/assets/tabs/bg.png",
+        "layer0.inner_margin": [1, 7],
+        "layer0.opacity": 1.0,
+        "content_margin": [-4, 0, -4, 0],
+        "tab_overlap": 5,
+        "tab_width": 180,
+        "tab_min_width": 45,
+        "tab_height": 24,
+        "mouse_wheel_switch": false
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["enable_tab_scrolling"],
+        "content_margin": [3, 0, 3, 0]
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["mouse_wheel_switches_tabs"],
+        "mouse_wheel_switch": true
+    },
+    // Tab element
+    {
+        "class": "tab_control",
+        "content_margin": [12, 0, 12, 0],
+        "max_margin_trim": 0,
+        "hit_test_level": 0.0,
+        "layer0.texture": "Theme - Sienna/assets/tabs/bg-inactive.png",
+        "layer0.inner_margin": [5, 5],
+        "layer0.opacity": 1.0
+    },
+    // Tab close state
+    {
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [12, -1, 7, 0]
+    },
+    // Tab hover state
+    {
+        "class": "tab_control",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Sienna/assets/tabs/bg-hover.png"
+    },
+    // Tab active state
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Sienna/assets/tabs/bg-active.png"
+    },
+
+//
+// TAB BUTTONS
+//
+
+    // Tab close button
+    {
+        "class": "tab_close_button",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Sienna/assets/tabs/close.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "layer0.opacity": 0.5
+    },
+    // Tab dirty button
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.texture": "Theme - Sienna/assets/tabs/dirty.png",
+        "layer0.opacity": 0.5
+    },
+    // Tab close button hover
+    {
+        "class": "tab_close_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Sienna/assets/tabs/close-hover.png"
+    },
+    // Tab close button pressed
+    {
+        "class": "tab_close_button",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.85
+    },
+
+//
+// TAB LABELS
+//
+
+    {
+        "class": "tab_label",
+        "fade": true,
+        "fg": [80, 80, 80],
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0],
+        "font.size": 11.5,
+        "font.italic": false,
+        "font.face": ".SFNSText-Regular"
+    },
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "fg": [40, 40, 40]
+    },
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "fg": [0, 0, 0]
+    },
+    {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+//
+// TAB SCROLLING
+//
+
+    // Tab dropdown
+    {
+        "class": "show_tabs_dropdown_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Sienna/assets/tabs/dropdown.png",
+        "layer0.tint": [132, 132, 132],
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["hover"],
+        "layer0.tint": [89, 89, 89]
+    },
+    // Tab scroll left
+    {
+        "class": "scroll_tabs_left_button",
+        "content_margin": [9, 6, 8, 7],
+        "layer0.texture": "Theme - Sienna/assets/tabs/arrow-left.png",
+        "layer0.tint": [132, 132, 132],
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["hover"],
+        "layer0.tint": [89, 89, 89]
+    },
+    // Tab scroll right
+    {
+        "class": "scroll_tabs_right_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Sienna/assets/tabs/arrow-right.png",
+        "layer0.tint": [132, 132, 132],
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["hover"],
+        "layer0.tint": [89, 89, 89]
+    },
+
+//
+// SIDEBAR
+//
+
+    // Sidebar container
+    {
+        "class": "sidebar_container",
+        "layer0.texture": "Theme - Sienna/assets/sidebar/bg.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [1, 1, 1, 1],
+        "content_margin": [0, 1, 0, 0]
+    },
+    // Sidebar tree
+    {
+        "class": "sidebar_tree",
+        "row_padding": [8, 4],
+        "indent": 18,
+        "indent_offset": 13,
+        "indent_top_level": false
+    },
+    // Sidebar rows
+    {
+        "class": "tree_row",
+        "layer0.texture": "Theme - Sienna/assets/sidebar/bg-selected.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    // Sidebar row selected
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+    // Sidebar heading
+    {
+        "class": "sidebar_heading",
+        "color": [68, 68, 68],
+        "font.bold": true,
+        "font.face": ".SFNSText-Regular",
+        "shadow_color": [245, 245, 245],
+        "shadow_offset": [0, 1]
+    },
+    // Sidebar heading selected
+    {
+        "class": "sidebar_heading",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255]
+    },
+    // Sidebar entry
+    {
+        "class": "sidebar_label",
+        "color": [68, 68, 68],
+        "font.bold": false,
+        "font.italic": false,
+        "font.size": 11,
+        "font.face": ".SFNSText-Regular"
+    },
+    // Sidebar folder entry
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [60, 60, 60]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "color": [40, 40, 40]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "settings": ["bold_folder_labels"],
+        "color": [60, 60, 60],
+        "font.bold": true
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "settings": ["bold_folder_labels"],
+        "color": [40, 40, 40]
+    },
+    // Sidebar entry selected
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255]
+    },
+    // Sidebar entry transient
+    {
+        "class": "sidebar_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+//
+// SIDEBAR - SPECIAL ICONS
+//
+
+    // Sidebar file close
+    {
+        "class": "close_button",
+        "layer0.texture": "Theme - Sienna/assets/sidebar/close.png",
+        "layer0.inner_margin": 0,
+        "layer0.opacity": 0.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.tint": [127, 127, 127],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "attributes": ["hover"],
+        "layer0.tint": [100, 100, 100],
+        "layer0.opacity": 1
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover","selected"]}],
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 0.65
+    },
+    {
+        "class": "close_button",
+        "parents": [{"class": "tree_row", "attributes": ["hover","selected"]}],
+        "attributes": ["hover"],
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 1
+    }, 
+    //
+    // Sidebar file dirty 
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.texture": "Theme - Sienna/assets/sidebar/file-dirty.png",
+        "layer0.tint": [127, 127, 127],
+        "layer0.opacity": 1.0
+    }, 
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/sidebar/file-dirty.png",
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 1.0
+    }, 
+    {
+        "class": "close_button",
+        "attributes": ["dirty","hover"],
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Sienna/assets/sidebar/close.png",
+        "layer0.tint": [0, 0, 0],
+        "layer0.opacity": 1 
+    },
+
+//
+// SIDEBAR - GENERAL FILE ICONS
+//
+
+    // Sidebar group closed
+    {
+        "class": "disclosure_button_control",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Sienna/assets/sidebar/group-closed.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [127, 127, 127],
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.tint": [100, 100, 100]
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.tint": [255, 255, 255]
+    },
+    // Sidebar group open
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Sienna/assets/sidebar/group-open.png"
+    },
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
+    },
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "layer0.texture": "Theme - Sienna/assets/sidebar/folder.png",
+        "content_margin": [8, 8]
+    },
+    // Sidebar file icons
+    {
+        "class": "icon_file_type",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+
+//
+// FOLD BUTTONS
+//
+
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "Theme - Sienna/assets/editor/fold-closed.png",
+        "layer0.inner_margin": 0,
+        "content_margin": [8, 8],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Sienna/assets/editor/fold-open.png"
+    },
+
+//
+// STANDARD SCROLLBARS
+//
+
+    // Standard vertical scroll bar
+    {
+        "class": "scroll_bar_control",
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/standard-vertical.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 6],
+        "blur": false
+    },
+    // Standard horizontal scroll bar
+    {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/standard-horizontal.png",
+        "layer0.inner_margin": [6, 2],
+        "blur": false
+    },
+    // Standard scroll bar corner
+    {
+        "class": "scroll_corner_control",
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/standard-corner.png",
+        "layer0.inner_margin": [2, 2],
+        "layer0.opacity": 1.0
+    },
+    // Standard vertical scroll puck
+    {
+        "class": "puck_control",
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/standard-puck-vertical.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [0, 10],
+        "content_margin": [8, 12],
+        "blur": false
+    },
+    // Standard horizontal scroll puck
+    {
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/standard-puck-horizontal.png",
+        "layer0.inner_margin": [10, 0],
+        "content_margin": [12, 8],
+        "blur": false
+    },
+
+//
+// OVERLAY SCROLLBARS
+//
+
+    // Overlay toggle scroll bar
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+    {
+        "class": "scroll_area_control",
+        "settings": ["!overlay_scroll_bars"],
+        "overlay": false
+    },
+    // Overlay vertical scroll bar
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/overlay-vertical.png",
+        "layer0.inner_margin": [0, 5],
+        "blur": true
+    },
+    // Overlay horizontal scroll bar
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/overlay-horizontal.png",
+        "layer0.inner_margin": [5, 0],
+        "blur": true
+    },
+    // Overlay vertical puck
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/overlay-puck-vertical.png",
+        "layer0.inner_margin": [0, 5],
+        "content_margin": [5, 20],
+        "blur": true
+    },
+    // Overlay horizontal puck
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/overlay-puck-horizontal.png",
+        "layer0.inner_margin": [5, 0],
+        "content_margin": [20, 5],
+        "blur": true
+    },
+    // Overlay light puck (for dark content)
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["dark"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/overlay-dark-puck-vertical.png"
+    },
+    // Overlay light horizontal puck (for dark content)
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal", "dark"],
+        "layer0.texture": "Theme - Sienna/assets/scrollbar/overlay-dark-puck-horizontal.png"
+    },
+
+//
+// EMPTY WINDOW BACKGROUND
+//
+
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 1.0
+    },
+
+//
+// GRID LAYOUT
+//
+
+    {
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [189, 189, 189]
+    },
+
+//
+// MINI MAP
+//
+
+    {
+        "class": "minimap_control",
+        "settings": ["always_show_minimap_viewport"],
+        "viewport_color": [0, 0, 0, 35],
+        "viewport_opacity": 1.0
+    },
+    {
+        "class": "minimap_control",
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_color": [0, 0, 0, 35],
+        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_opacity": 1.0
+    },
+
+//
+// DIALOG
+//
+
+    {
+        "class": "dialog",
+        "layer0.tint": [238, 238, 238],
+        "layer0.opacity": 1.0
+    },
+
+//
+// PROGRESS BAR
+//
+
+    {
+        "class": "progress_bar_control",
+        "layer0.tint": [193, 193, 193],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "progress_gauge_control",
+        "layer0.tint": [0, 109, 212],
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 6]
+    },
+
+//
+// LABELS
+//
+
+    // General labels
+    {
+        "class": "label_control",
+        "color": [32, 32, 32],
+        "font.face": ".SFNSText-Regular",
+        "font.size": 12
+    },
+    // Text field labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "panel_control"}],
+        "shadow_color": [250, 250, 250],
+        "shadow_offset": [0, 0],
+        "font.face": ".SFNSText-Regular",
+        "font.size": 12
+    },
+    // Button labels
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control"}],
+        "shadow_color": [250, 250, 250],
+        "shadow_offset": [0, 0]
+    },
+
+//
+// TOOLTIP
+//
+
+    // Tooltip container
+    {
+        "class": "tool_tip_control",
+        "layer0.texture": "Theme - Sienna/assets/tooltip/bg.png",
+        "layer0.inner_margin": [1, 1],
+        "layer0.opacity": 0.98,
+        "content_margin": [6, 3]
+    },
+    // Tooltip content
+    {
+        "class": "tool_tip_label_control",
+        "color": [0, 0, 0],
+        "font.face": ".SFNSText-Regular",
+        "font.size": 11
+    },
+
+//
+// STATUS BAR
+//
+
+    // Status bar container
+    {
+        "class": "status_bar",
+        "layer0.texture": "Theme - Sienna/assets/statusbar/bg.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 2],
+        "content_margin": [8, 4, 8, 4]
+    },
+    // Status bar button
+    {
+        "class": "status_button",
+        "min_size": [100, 0]
+    },
+    // Status bar label
+    {
+        "class": "label_control",
+        "parents": [{"class": "status_bar"}],
+        "color": [64, 64, 64],
+        "shadow_color": [255, 255, 255],
+        "shadow_offset": [0, 0],
+        "font.size": 11
+    },
+    // Panel switcher
+    {
+        "class": "panel_button_control",
+        "layer0.tint": [32, 32, 32]
+    },
+
+//
+// STANDARD TEXT BUTTONS
+//
+
+    // Default button state
+    {
+        "class": "button_control",
+        "content_margin": [6, 5, 6, 5],
+        "min_size": [75, 0],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-small.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [6, 6]
+    },
+    // Pressed button state
+    {
+        "class": "button_control",
+        "attributes": ["pressed"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-small-pressed.png"
+    },
+
+//
+// TEXT INPUT FIELD
+//
+
+    // Text input field item
+    {
+        "class": "text_line_control",
+        "layer0.texture": "Theme - Sienna/assets/panel/text-field.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [8, 8, 8, 8],
+        "content_margin": [3, 3, 8, 3]
+    },
+
+    // Text input dropdown
+    {
+        "class": "dropdown_button_control",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Sienna/assets/panel/text-field-dropdown.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [127, 127, 127],
+        "layer0.inner_margin": [4, 4]
+    },
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer0.tint": [100, 100, 100]
+    },
+
+//
+// PANEL BACKGROUNDS
+//
+
+    // Bottom panel background
+    {
+        "class": "panel_control",
+        "layer0.texture": "Theme - Sienna/assets/panel/bg.png",
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0,
+        "content_margin": [4, 4, 0, 2]
+    },
+    // Quick panel background
+    {
+        "class": "overlay_control",
+        "layer0.texture": "Theme - Sienna/assets/quickpanel/bg.png",
+        "layer0.inner_margin": [10, 16, 10, 10],
+        "layer0.opacity": 1.0,
+        "content_margin": [4, 16, 4, 10]
+    },
+
+//
+// QUICK PANEL
+//
+
+    {
+        "class": "quick_panel",
+        "row_padding": [8, 4],
+        "layer0.tint": [248, 248, 248],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control" }],
+        "layer0.texture": "Theme - Sienna/assets/quickpanel/text-field.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [18, 8, 18, 8],
+        "content_margin": [16, 6, 16, 10]
+    },
+    {
+        "class": "quick_panel_row",
+        "layer0.texture": "Theme - Sienna/assets/quickpanel/row.png",
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Sienna/assets/quickpanel/row-selected.png",
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "quick_panel_label",
+        "fg": [60, 60, 60],
+        "match_fg": [0, 0, 0],
+        "selected_fg": [40, 40, 40],
+        "selected_match_fg": [0, 0, 0]
+    },
+    {
+        "class": "quick_panel_label",
+        "parents": [{"class": "quick_panel_row", "attributes": ["selected"]}],
+        "fg": [255, 255, 255],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [255, 255, 255]
+    },
+    {
+        "class": "quick_panel_label",
+        "parents": [{"class": "mini_quick_panel_row", "attributes": ["selected"]}],
+        "fg": [255, 255, 255],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [255, 255, 255]
+    },
+    {
+        "class": "quick_panel_path_label",
+        "fg": [120, 120, 120],
+        "match_fg": [0, 0, 0],
+        "selected_fg": [40, 40, 40],
+        "selected_match_fg": [0, 0, 0]
+    },
+    {
+        "class": "quick_panel_path_label",
+        "parents": [{"class": "quick_panel_row", "attributes": ["selected"]}],
+        "fg": [255, 255, 255],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [255, 255, 255]
+    },
+    {
+        "class": "quick_panel_path_label",
+        "parents": [{"class": "mini_quick_panel_row", "attributes": ["selected"]}],
+        "fg": [255, 255, 255],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [255, 255, 255]
+    },
+    {
+        "class": "quick_panel_score_label",
+        "fg": [160, 160, 160],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [120, 120, 120]
+    },
+    {
+        "class": "quick_panel_score_label",
+        "parents": [{"class": "quick_panel_row", "attributes": ["selected"]}],
+        "fg": [255, 255, 255],
+        "match_fg": [255, 255, 255],
+        "selected_fg": [255, 255, 255]
+    },
+
+//
+// MINI QUICK PANEL
+//
+
+    {
+        "class": "mini_quick_panel_row",
+        "layer0.texture": "Theme - Sienna/assets/quickpanel/row.png",
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "mini_quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Sienna/assets/quickpanel/row-selected.png"
+    },
+
+//
+// CODE COMPLETION DROPDOWN
+//
+
+    {
+        "class": "popup_control",
+        "content_margin": [2, 2],
+        "layer0.tint": [255, 255, 255],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "auto_complete",
+        "row_padding": [1, 2]
+    },
+    {
+        "class": "auto_complete_label",
+        "fg": [51, 51, 51],
+        "match_fg": [0, 0, 0],
+        "selected_fg": [205, 226, 243],
+        "selected_match_fg": [255, 255, 255]
+    },
+    {
+        "class": "table_row",
+        "layer0.texture": "Theme - Sienna/assets/autocomplete/row-selected.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [3, 1]
+    },
+    {
+        "class": "table_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
+//
+// BOTTOM PANEL BUTTONS
+//
+
+    // Button group middle
+    {
+        "class": "icon_button_control",
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-middle.png",
+        "layer0.inner_margin": [6, 6],
+        "layer0.opacity": 1.0,
+        "content_margin": [3, 3]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["pressed"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-middle-pressed.png",
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-middle-selected.png",
+    },
+    // Button group left
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-left.png",
+        "content_margin": [4, 3, 3, 3]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "pressed"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-left-pressed.png"
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "selected"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-left-selected.png"
+    },
+    // Button group right
+    {
+        "class": "icon_button_control",
+        "attributes": ["right"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-right.png",
+        "content_margin": [3, 3, 4, 3]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["right", "pressed"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-right-pressed.png"
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["right", "selected"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-group-right-selected.png"
+    },
+    // Button single
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-small.png",
+        "content_margin": [4, 3]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right", "pressed"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-small-pressed.png"
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right", "selected"],
+        "layer0.texture": "Theme - Sienna/assets/panel/btn-small-selected.png"
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 1
+//
+
+    // Regex search button
+    {
+        "class": "icon_regex",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-regex-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-regex-on.png"
+    },
+    // Case sensitive search button
+    {
+        "class": "icon_case",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-case-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-case-on.png"
+    },
+    // Match whole word search button
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-word-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-word-on.png"
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
+//
+
+    // Show search context button
+    {
+        "class": "icon_context",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-context-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-context-on.png"
+    },
+    // Use search buffer
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-buffer-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-buffer-on.png"
+    },
+    // Search wrap button
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-wrap-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-wrap-on.png"
+    },
+    // Search in selection button
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-selection-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-selection-on.png"
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 3
+//
+
+    // Preserve case button
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-preserve-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-preserve-on.png"
+    },
+
+//
+// BOTTOM PANEL ICONS - GROUP 4
+//
+
+    // Highlight results button
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-highlight-off.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [9, 9]
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Sienna/assets/panel/icon-highlight-on.png"
+    }
+
+]
