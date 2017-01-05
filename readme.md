@@ -73,6 +73,7 @@ The following parameters can be added in your settings file (`Sublime Text` → 
 
 | Version | Date | Notes |
 | --- | --- | --- |
+| `1.1.0` | 2017-01-05 | Add `sienna_system_font` setting |
 | `1.0.0` | 2016-12-28 | Initial version |
 
 ## Credits
