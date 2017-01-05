@@ -32,8 +32,6 @@ _Color scheme: [Monokai Extended](https://packagecontrol.io/packages/Monokai%20E
 
 ### Install with [Package Control](https://packagecontrol.io/)
 
-_Support coming soon_
-
 * Open the `Command Palette` (<kbd>CMD</kbd>+<kbd>MAJ</kbd>+<kbd>P</kbd>)
 * Select `Package Control: Install Package`
 * Search `Theme - Sienna` and hit <kbd>Enter</kbd>
