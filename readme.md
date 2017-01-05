@@ -6,6 +6,7 @@
 * [Screenshots](#screenshots)
 * [Installation](#installation)
 * [Activation](#activation)
+* [Settings](#settings)
 * [Changelog](#changelog)
 * [Credits](#credits)
 * [License](license.md)
@@ -59,6 +60,14 @@ _Support coming soon_
 ```
 
 Then, restart Sublime Text.
+
+## Settings
+
+The following parameters can be added in your settings file (`Sublime Text` → `Preferences` → `Settings`).
+
+| Setting | Values | Default | Description
+| --- | --- | --- | --- |
+| `sienna_system_font` | `true|false` | `false` | Set to `true` to use the system font (if your system does not have the [San Francisco](https://developer.apple.com/fonts/) font installed, or if you experience UI issues) |
 
 ## Changelog
 

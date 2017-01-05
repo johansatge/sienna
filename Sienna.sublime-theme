@@ -1,6 +1,36 @@
 [
 
 //
+// SETTINGS
+// 
+
+    {
+        "class": "tab_label",
+        "font.face": ".SFNSText-Regular",
+        "settings": ["!sienna_system_font"]
+    },
+    {
+        "class": "sidebar_heading",
+        "font.face": ".SFNSText-Regular",
+        "settings": ["!sienna_system_font"]
+    },
+    {
+        "class": "sidebar_label",
+        "font.face": ".SFNSText-Regular",
+        "settings": ["!sienna_system_font"]
+    },
+    {
+        "class": "label_control",
+        "font.face": ".SFNSText-Regular",
+        "settings": ["!sienna_system_font"]
+    },
+    {
+        "class": "tool_tip_label_control",
+        "font.face": ".SFNSText-Regular",
+        "settings": ["!sienna_system_font"]
+    },
+
+//
 // TAB
 //
 
@@ -105,7 +135,6 @@
         "shadow_offset": [0, 0],
         "font.size": 11.5,
         "font.italic": false,
-        "font.face": ".SFNSText-Regular"
     },
     {
         "class": "tab_label",
@@ -205,7 +234,6 @@
         "class": "sidebar_heading",
         "color": [68, 68, 68],
         "font.bold": true,
-        "font.face": ".SFNSText-Regular",
         "shadow_color": [245, 245, 245],
         "shadow_offset": [0, 1]
     },
@@ -222,7 +250,6 @@
         "font.bold": false,
         "font.italic": false,
         "font.size": 11,
-        "font.face": ".SFNSText-Regular"
     },
     // Sidebar folder entry
     {
@@ -578,7 +605,6 @@
     {
         "class": "label_control",
         "color": [32, 32, 32],
-        "font.face": ".SFNSText-Regular",
         "font.size": 12
     },
     // Text field labels
@@ -587,7 +613,6 @@
         "parents": [{"class": "panel_control"}],
         "shadow_color": [250, 250, 250],
         "shadow_offset": [0, 0],
-        "font.face": ".SFNSText-Regular",
         "font.size": 12
     },
     // Button labels
@@ -614,7 +639,6 @@
     {
         "class": "tool_tip_label_control",
         "color": [0, 0, 0],
-        "font.face": ".SFNSText-Regular",
         "font.size": 11
     },
 
