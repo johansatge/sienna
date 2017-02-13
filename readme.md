@@ -22,7 +22,7 @@ _GoTo panel, Search & Replace panel:_
 
 ![screenshot-02](screenshot-02.png)
 
-_The theme works better with the [zz File Icons](https://packagecontrol.io/packages/zz File Icons) package:_
+_The theme works better with the [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon) package:_
 
 ![screenshot-03](screenshot-03.png)
 
@@ -80,4 +80,4 @@ This theme is based on the following awesome projects:
 
 * [El Capitan Theme](https://github.com/iccir/El-Capitan-Theme) _(General inspiration, scrollbar & quick panel styles)_
 * [Soda Theme](https://github.com/buymeasoda/soda-theme) _(Buttons style)_
-* [zz File Icons](https://github.com/ihodev/sublime-file-icons) _(Icons)_
+* [A File Icon](https://github.com/ihodev/a-file-icon) _(Icons)_
