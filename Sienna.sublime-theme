@@ -390,6 +390,7 @@
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Sienna/assets/sidebar/folder.png",
+        "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     // Sidebar file icons
