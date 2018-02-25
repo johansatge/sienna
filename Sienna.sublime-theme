@@ -162,6 +162,7 @@
         "content_margin": [9, 7, 8, 6],
         "layer0.texture": "Theme - Sienna/assets/tabs/dropdown.png",
         "layer0.tint": [132, 132, 132],
+        "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
@@ -175,6 +176,7 @@
         "content_margin": [9, 6, 8, 7],
         "layer0.texture": "Theme - Sienna/assets/tabs/arrow-left.png",
         "layer0.tint": [132, 132, 132],
+        "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
@@ -188,6 +190,7 @@
         "content_margin": [9, 7, 8, 6],
         "layer0.texture": "Theme - Sienna/assets/tabs/arrow-right.png",
         "layer0.tint": [132, 132, 132],
+        "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
