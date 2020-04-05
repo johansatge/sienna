@@ -61,6 +61,7 @@ Then, restart Sublime Text.
 
 | Version | Date | Notes |
 | --- | --- | --- |
+| `1.1.2` | 2020-04-05 | Fix fonts on macOS Catalina |
 | `1.1.1` | 2018-02-26 | Fix links in readme<br>Fix missing assets in ST `3143` |
 | `1.1.0` | 2017-01-05 | Add `sienna_system_font` setting |
 | `1.0.0` | 2016-12-28 | Initial version |
