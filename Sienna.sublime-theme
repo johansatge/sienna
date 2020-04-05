@@ -5,29 +5,19 @@
 // 
 
     {
-        "class": "tab_label",
-        "font.face": ".SFNSText-Regular",
-        "settings": ["!sienna_system_font"]
+        "class": "tab_label"
     },
     {
-        "class": "sidebar_heading",
-        "font.face": ".SFNSText-Regular",
-        "settings": ["!sienna_system_font"]
+        "class": "sidebar_heading"
     },
     {
-        "class": "sidebar_label",
-        "font.face": ".SFNSText-Regular",
-        "settings": ["!sienna_system_font"]
+        "class": "sidebar_label"
     },
     {
-        "class": "label_control",
-        "font.face": ".SFNSText-Regular",
-        "settings": ["!sienna_system_font"]
+        "class": "label_control"
     },
     {
-        "class": "tool_tip_label_control",
-        "font.face": ".SFNSText-Regular",
-        "settings": ["!sienna_system_font"]
+        "class": "tool_tip_label_control"
     },
 
 //
@@ -757,7 +747,6 @@
         "layer0.tint": [248, 248, 248],
         "layer0.opacity": 1.0
     },
-
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control" }],
